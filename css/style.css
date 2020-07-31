@@ -266,16 +266,16 @@ button.btn-about_info::-moz-focus-inner{
 }
 
 
-input.input-cons:active, input.input-cons:focus{
+input.input-consy:active, input.input-consy:focus{
 	outline: transparent !important;
 	box-shadow: none !important;
 }
-input.input-cons{
-	cursor: pointer;
+input.input-consy{
+	/* cursor: pointer; */
 	border: none;
 	
 }
-input.input-cons::-moz-focus-inner{
+input.input-consy::-moz-focus-inner{
 	outline: transparent !important;
 	box-shadow: none !important;
 }
