@@ -212,7 +212,75 @@ header .call {
   flex-direction: column;
   text-align: right;
 }
+/* fix styles btn-border -------------------------------------------------------------------------------------------------------------------- */
+button.btn-header{
+	cursor: pointer;
+}
+button.btn-header:active, button.btn-header:focus {
+	outline: transparent !important;
+	/* border: transparent !important; */
+	box-shadow: none !important;
+}
+button.btn-header::-moz-focus-inner {
+/* border: transparent !important; */
+outline: transparent !important;
+box-shadow: none !important;
+}
+button.btn-cons:active, button.btn-cons:focus{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+button.btn-cons{
+	cursor: pointer;
+	border: none;
+}
+button.btn-cons::-moz-focus-inner{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+button.btn-about_info{
+	cursor: pointer;
+	
+	
+}
+button.btn-about_info:active, button.btn-about_info:focus{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+button.btn-about_info::-moz-focus-inner{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
 
+.btn-more_info{
+	cursor: pointer;
+	border:none;
+}
+.btn-more_info:active, .btn-more_info:focus{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+.btn-more_info::-moz-focus-inner{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+
+
+input.input-cons:active, input.input-cons:focus{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+input.input-cons{
+	cursor: pointer;
+	border: none;
+	
+}
+input.input-cons::-moz-focus-inner{
+	outline: transparent !important;
+	box-shadow: none !important;
+}
+
+/* end fix styles btn-border ------------------------------------------------------------------------------------------------------------- */
 header .phone {
   margin-bottom: 0.75rem;
   font-family: "Bebas Neue", sans-serif;
@@ -2227,7 +2295,12 @@ footer .ftr-item a{
 }
 footer .ftr-item a:hover{
 	color: #000;
-	font-weight: 600;
+	/* /*font-weight: 600; */
+	transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	-o-transform: scale(1.04);
 }
 footer .copy p {
 	font-size: 14px;
@@ -2251,9 +2324,16 @@ footer .ftr-end a{
 	line-height: 21px;
 	color: #1B1B1B;
 	text-decoration: none;
-
+	transition:ease all 0.3s ;
 	display: flex;
 	align-items:center;
+	-webkit-transition:ease all 0.2s ;
+	-moz-transition:ease all 0.2s ;
+	-ms-transition:ease all 0.2s ;
+	-o-transition:ease all 0.2s ;
+}
+footer .ftr-end a:hover{
+	color: rgba(0,0,0 , 0.6);
 }
 footer .ftr-end a img{
 	width: 30px;
