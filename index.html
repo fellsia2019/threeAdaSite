@@ -72,7 +72,36 @@
               <a href="#" id="null-item" class="target-burger"></a>
               <div class="call" data-aos="fade-down" data-aos-delay="1800" data-aos-duration="1400">
                 <div class="phone">+7 <span>(495)</span> 240-82-92</div>
-                <button class="btn btn-sm btn-outline-dark btn-header">Заказать звонок</button>
+                <button class="btn btn-sm btn-outline-dark btn-header" type="button" data-toggle="modal" data-target="#callBack">Заказать звонок</button>
+              </div>
+              <div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-labelledby="callBackLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="callBackLabel">Заказать звонок</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-row justify-content-center">
+                        <div class="form-group col-md-6">
+                          <input class="form-control form-control-lg input-callback" id="name" type="name" placeholder="Как к Вам обращаться?" name="name"/>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input class="form-control form-control-lg input-callback" id="phone" type="text" placeholder="Ваш номер телефона" name="phone"/>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <button class="btn btn-info w-100 btn-lg btn-cons" aria-pressed="true" type="button">Позвоните мне</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-dark btn-header" data-dismiss="modal">Закрыть</button>
+                      
+                    </div>
+                  </div>
+                </div>
               </div>
               <a class="menu-icon"><img src="img/menu.svg" style=""  id="mob_svg" alt=""></a>
             </div>
